@@ -885,8 +885,38 @@ def main():
     else:
         if config.app.show_welcome_message:
             st.markdown("""
-                ### 👋 Welcome to the Time Analysis Dashboard!
-                
+                ### 👋 Welcome to the **Time Analysis Dashboard!**
+
+                ### Overview
+                The **Time Analysis Dashboard** is an interactive tool designed to analyze transaction data and provide insights into:
+                - Growth metrics (Year-over-Year, Month-over-Month)
+                - Seasonal trends and time-based patterns
+                - Anomalies and correlations
+
+                ### Key Features
+                - **Data Analysis**:
+                - Year-over-Year Growth Analysis
+                - Monthly Patterns
+                - Day of Week Analysis
+                - Seasonal Decomposition
+                - **Visualizations**:
+                - Heatmaps, trend lines, and bar charts powered by Plotly
+                - **Customizations**:
+                - Tailor thresholds, templates, and parameters via a simple interface
+                - **Reporting**:
+                - Downloadable Reports in Excel, CSV, or JSON formats
+
+                ### Built With
+                - Python (Streamlit, Pandas, Plotly)
+                - Statsmodels for seasonal decomposition
+                - Open-source libraries for data analysis
+
+                ### Contact
+                For questions or feedback, reach out via:
+                - **Email**: Bomino@mlawali.com
+                - **GitHub**: [https://github.com/bomino](https://github.com/bomino)
+
+                ### Getting Started
                 This tool helps you analyze your transaction data over time. To get started:
                 
                 1. Upload your CSV file using the sidebar
@@ -894,20 +924,16 @@ def main():
                 3. Explore different visualizations in the tabs
                 4. Download the complete analysis results
                 
-                #### Required CSV Format:
+                ### Required CSV Format
+                Your file should follow this structure:
                 ```csv
                 transaction_date,Total Spend ($),Quantity Purchased
                 2023-01-01,1000.50,5
                 2023-01-02,750.25,3
                 ```
-                
-                #### Features:
-                - Year-over-Year Growth Analysis
-                - Monthly Patterns
-                - Day of Week Analysis
-                - Seasonal Decomposition
-                - Downloadable Reports (Excel, CSV, JSON)
             """)
+
+
 
 
 if __name__ == "__main__":
