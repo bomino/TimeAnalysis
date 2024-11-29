@@ -1,0 +1,42 @@
+analysis:
+  anomaly_detection_window: 7
+  anomaly_std_threshold: 2.0
+  correlation_strength_threshold: 0.7
+  min_months_for_seasonality: 12
+  moving_average_windows:
+  - 3
+  - 6
+  top_peak_months: 5
+  trend_significance_threshold: 0.05
+app:
+  app_icon: "\xF0\u0178\u201C\u0160"
+  app_title: Time Analysis Dashboard
+  enable_dark_mode: true
+  layout: wide
+  show_sample_data: true
+  show_welcome_message: true
+  sidebar_state: expanded
+  theme_base: light
+export:
+  default_filename_prefix: time_analysis
+  excel_sheet_names:
+    anomalies: Anomaly Detection
+    dow_analysis: Day of Week Analysis
+    monthly_growth: Monthly Growth
+    seasonality: Seasonal Analysis
+    yearly_growth: Yearly Growth
+  export_formats:
+  - excel
+  - csv
+visualization:
+  chart_animation: true
+  chart_template: plotly_white
+  color_palette:
+  - '#1f77b4'
+  - '#2ca02c'
+  - '#d62728'
+  - '#9467bd'
+  - '#ff7f0e'
+  default_chart_height: 400
+  heatmap_colorscale: Viridis
+  show_chart_legends: true
